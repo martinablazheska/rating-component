@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    border: 0;
+    padding:0;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+    font-size: 15px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 1.7em;
+    font-weight: 400;
+    margin-bottom: 4%;
+}
+
+.container {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:#1c232d;
+    max-width: 80vw;
+    border-radius: 15px;
+    padding: 1.5em;
+
+}
+
+.small-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#232c35;
+    border-radius: 50%;
+    height: 2.5em;
+    width: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+.large-icon {
+    display: flex;
+    justify-content: center;
+    margin: 1.5em;
+    height: 30%;
+}
+
+.subtitle {
+    background-color: #262a32;
+    color:#d08954;
+    font-weight: 300;
+    font-size: 0.9em;
+    align-self: center;
+    margin-bottom: 1.5em;
+    padding: 0.7em 0.7em 0.7em 0.7em;
+    border-radius: 25px ;
+}
+
+.description {
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 2em;
+}
+
+.centered {
+    text-align: center;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ratings {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.score {
+    display:none;
+}
+
+.ratings label {
+    background-color: #262f38;
+    color: hsl(217, 12%, 63%);
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.ratings label:hover{
+    background-color: #fc7613;
+    color: white;
+}
+
+
+.score:checked + label {
+    background-color: #7b8898;
+    color: white;
+} 
+
+.submit {
+    display: block;
+    width: 100%;
+    background-color: #fc7613;
+    color: white;
+    font-size: 0.8em;
+    letter-spacing: 0.15em;
+    padding: 1.2em;
+    border-radius: 20px;
+}
+
+.submit:hover {
+    background-color: white;
+    color:#fc7613;
+}
+
+.not-displayed {
+    display: none;
+}
+
+@media (min-width: 375px){
+    .container {
+        max-width: 300px;
+    }
+}

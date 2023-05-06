@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="rate">
+      <div class="small-icon">
+        <img src="images/icon-star.svg" alt="star" />
+      </div>
+
+      <div class="text-holder">
+        <h1>How did we do?</h1>
+        <p class="description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+
+      <div class="form">
+        <form action="/submit">
+          <div class="ratings">
+            <input
+              type="radio"
+              name="score"
+              class="score"
+              value="1"
+              id="1"
+            /><label for="1">1</label>
+            <input
+              type="radio"
+              name="score"
+              class="score"
+              value="2"
+              id="2"
+            /><label for="2">2</label>
+            <input
+              type="radio"
+              name="score"
+              class="score"
+              value="3"
+              id="3"
+            /><label for="3">3</label>
+            <input
+              type="radio"
+              name="score"
+              class="score"
+              value="4"
+              id="4"
+            /><label for="4">4</label>
+            <input
+              type="radio"
+              name="score"
+              class="score"
+              value="5"
+              id="5"
+            /><label for="5">5</label>
+          </div>
+
+          <button type="submit" class="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container not-displayed" id="result">
+      <div class="large-icon">
+        <img src="images/illustration-thank-you.svg" alt="completed" />
+      </div>
+      <div class="subtitle centered">
+        You selected <span id="selected-score">2</span> out of 5
+      </div>
+      <h1 class="centered">Thank you!</h1>
+      <p class="centered description">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
